@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Puppy 家长 App 的使用帮助与联系信息。">
+  <title>Puppy 家长｜支持</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f5ee; --card:#fff; --ink:#182e2b; --muted:#566864; --brand:#167d75; --line:#dce7e2; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#101b1a; --card:#172825; --ink:#e8f2ed; --muted:#a6b9b1; --brand:#8ad9cf; --line:#315049; } }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:32px 18px 56px; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+    main { max-width:760px; margin:auto; }
+    header { text-align:center; padding:24px 0 14px; }
+    h1 { font-size:32px; margin:12px 0 4px; }
+    h2 { font-size:21px; margin:0 0 12px; }
+    p { margin:8px 0; }
+    section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:22px 26px; margin:18px 0; }
+    a { color:var(--brand); }
+    .muted { color:var(--muted); }
+    .icon { font-size:52px; line-height:1; }
+    footer { color:var(--muted); text-align:center; font-size:13px; margin-top:28px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="icon" aria-hidden="true">🐶</div>
+    <h1>Puppy 家长</h1>
+    <p class="muted">家庭 Puppy 机器人的家长端</p>
+  </header>
+  <section>
+    <h2>联系支持</h2>
+    <p>遇到连接、配对或照片显示问题，请发邮件至 <a href="mailto:duscott80@gmail.com">duscott80@gmail.com</a>。</p>
+    <p class="muted">描述问题时可提供 App 版本、iOS 版本与不含家庭照片或密钥的错误提示。请勿发送签名私钥、iCloud 登录凭据、儿童声音或家庭照片。</p>
+  </section>
+  <section>
+    <h2>开始使用</h2>
+    <p>正式连接需要兼容的 Puppy 机器人、持续运行的家庭 Mac 网关，以及家长授权的 iCloud Drive 文件夹。在「连接」中导入家庭网关的公开配对配置、选择共享文件夹，并把手机公钥登记到家庭网关。先发送状态请求，看到已验证的完成回执后再使用拍照或动作。</p>
+    <p>没有设备时，可在「连接」页进入离线演示。演示数据在本机生成，不会连接家中设备，动作和拍照按钮不可用。</p>
+  </section>
+  <section>
+    <h2>常见问题</h2>
+    <p><strong>状态请求已提交，但没有结果？</strong> iCloud Drive 同步是异步的。请确认手机与家庭 Mac 使用同一已授权目录、网关保持运行，再在记录页查看回执。不要反复提交可能产生重复请求。</p>
+    <p><strong>「定点巡看」能看整个家吗？</strong>不能。它只在 Puppy 当前所在位置拍摄一张照片；没有实时视频、移动导航或全屋覆盖。</p>
+    <p><strong>可以远程紧急停止吗？</strong>远程停止同样经过 iCloud Drive，可能延迟。现场有人照看时，仍应使用设备机身的停止方式。</p>
+    <p><strong>如何撤销手机权限或删除照片？</strong>在家庭 Mac 网关移除该手机的公钥登记；照片需在家长自己的 iCloud Drive 和家庭 Mac 中清理。卸载 App 只移除手机上的应用数据。</p>
+  </section>
+  <footer><a href="privacy.html">隐私政策</a><br>© 2026 Shibing Du</footer>
+</main>
+</body>
+</html>
